@@ -11,55 +11,92 @@
     <title>La Libelula - Contactos - Sitio Oficial</title>
 </head>
 <body>
-    <header> 
-        <nav>    
-            <a class="logo" href="../index.html"><img src="../assets/img/Logo.png" alt="Logo de Lu Tomada"></a>
-            <ul class="menu">
-                <li><a href="../pages/biografia.html">Acerca de mi</a></li>
-                <li><a href="../pages/flowmo.html">FlowMo</a></li>
-                <li><a href="../pages/tensegridance.html">Tensegridance</a></li>
-                <li><a href="../pages/ballet.html">Ballet</a></li>
-                <li><a href="../pages/eventos.html">Eventos</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    <header>  
+        <nav class="navbar navbar-expand-lg bg-custom-color">
+            <div class="container-fluid">
+              <a class="logo" href="../index.html"><img src="../assets/img/Logo.png" alt="Logo de Lu Tomada"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/biografia.html">Acerca de mi</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Tecnicas
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="../pages/ballet.html">Ballet</a></li>
+                      <li><a class="dropdown-item" href="../pages/flowmo.html">Flow Motion</a></li>
+                      <li><a class="dropdown-item" href="../pages/tensegridance.html">Tensegridance</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/eventos.html">Eventos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <main>
         <h1>Contacto</h1>
-        <section>
-            <h2>Suscribite al newsletter</h2>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium aspernatur, quidem necessitatibus recusandae tempora sit soluta ad fugit repudiandae voluptatem cum cupiditate maiores dolorem quaerat quis. Consequuntur id soluta explicabo nulla temporibus, amet provident officia autem! Dolore harum, in aliquam tempora quod architecto debitis minima, ullam consequuntur ipsum placeat earum possimus tenetur non. Quia, aliquam. Dignissimos quam, recusandae cumque incidunt unde sunt provident? Minus, inventore laborum maiores fuga dignissimos rerum quis aperiam laboriosam nesciunt incidunt quasi reprehenderit quas fugit, corporis tenetur possimus facilis odio repellendus eveniet unde praesentium id. Iste minima autem cumque provident quas consectetur officiis, nihil reiciendis odio.
+        <h2>Suscribite al newsletter</h2>
+        <section class="texto_suscripcion">
+             <p>
+                "¡Únete a nuestra comunidad de amantes de la danza! Suscribite a nuestra newsletter y descubre el fascinante mundo de la danza a través de los ojos de una apasionada bailarina.
+
+                Recibirás en tu bandeja de entrada información exclusiva sobre los últimos espectáculos, eventos y talleres en los que participará nuestra talentosa Luciana. Además, tendrás acceso a contenidos especiales, como entrevistas, consejos y trucos de baile, y noticias sobre su carrera en constante evolución.
+
+                Si eres un aficionado de la danza, un estudiante de baile o simplemente sientes curiosidad por este arte lleno de gracia y expresión, nuestra newsletter te mantendrá al tanto de todo lo relacionado con la trayectoria de nuestra bailarina y te brindará una experiencia única.
+
+                No pierdas la oportunidad de estar en primera fila de su carrera y de recibir inspiración directamente en tu correo electrónico. ¡Suscríbete ahora y forma parte de nuestra comunidad de danza!"
             </p>     
         </section>
         <form> 
-            <div>
+            <div class="suscripcion">
                 <Label for="newsletter">Suscribite al newsletter!!!</Label>
                 <input type="email" placeholder="Ingresa tu email" name="newsletter">
                 <button type="submit">Enviar</button>
             </div>
         </form>
-        <section>
-            <h2>Deja tu mensaje</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam nostrum voluptate voluptates, eligendi corrupti dolorem quae, odio saepe laborum, ab quo cupiditate ipsam possimus rem. Id accusamus laborum error omnis, quidem consequuntur molestiae odit dolor possimus quisquam, vero quis voluptate vel asperiores aut suscipit laboriosam deleniti iure rem, at expedita ullam. Veritatis ratione cumque amet quia omnis sed, a unde quae totam. Aliquam velit architecto minima magnam voluptatum perferendis, ipsam omnis vel, quae molestias quos voluptatem, deserunt reiciendis vitae illum aspernatur iure impedit quam. Nisi quaerat veniam aliquam incidunt delectus distinctio dicta autem id, perferendis eveniet praesentium. Eaque, deleniti autem.</p>
-        </section>    
-        <form>
-            <div>
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" placeholder="Ingresa tu nombre">
-            </div>
-            <div>
-                <label for="mail">Mail:</label>
-                <input type="email" name="mail" placeholder="Ingresa tu mail">
-            </div>
-            <div>
-                <Label for="comentario">Comentario:</Label>
-                <textarea name="comentario" placeholder="Deja tu comentario" id="" cols="30" rows="10"></textarea>
-            </div>
-            <div>
-                <button type="submit">Enviar</button>
-            </div>
-        </form>
+        <h2>Deja tu mensaje</h2>
+        <section class="texto_suscripcion">
+            <p>
+                ¡Dejanos tu mensaje para nuestra talentosa Luciana! Queremos conocer tus pensamientos y palabras de apoyo mientras ella sigue su pasión en la danza.
+
+                Tu mensaje será una muestra de aliento que la motivará a dar lo mejor de sí en cada actuación y a seguir creciendo en su arte.
+                
+                Cuéntanos cómo te ha inspirado, cómo sus actuaciones te han conmovido o cómo su talento ha dejado huella en tu vida.
+                
+                Déjanos tu mensaje en el formulario a continuación y únete a la comunidad de admiradores que apoyan su carrera en la danza.
+                
+                ¡Esperamos leer tus palabras para transmitírselas a nuestra talentosa bailarina!</p>
+        </section>
+        <section class="formulario_contacto">    
+            <form>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" placeholder="Ingresa tu nombre">
+                </div>
+                <div>
+                    <label for="mail">Mail:</label>
+                    <input type="email" name="mail" placeholder="Ingresa tu mail">
+                </div>
+                <div>
+                    <Label for="comentario">Comentario:</Label>
+                    <textarea name="comentario" placeholder="Deja tu comentario" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
     </main>
     <footer>
         <section class="logo">    

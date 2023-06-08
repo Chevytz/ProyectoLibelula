@@ -11,30 +11,50 @@
     <title>La Libelula - Ballet - Sitio Oficial</title>
 </head>
 <body>
-    <header>
-        <nav>    
-            <a class="logo" href="../index.html"><img src="../assets/img/Logo.png" alt="Logo de Lu Tomada"></a>
-            <ul class="menu">
-                <li><a href="../pages/biografia.html">Acerca de mi</a></li>
-                <li><a href="../pages/flowmo.html">FlowMo</a></li>
-                <li><a href="../pages/tensegridance.html">Tensegridance</a></li>
-                <li><a href="../pages/ballet.html">Ballet</a></li>
-                <li><a href="../pages/eventos.html">Eventos</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    <header>  
+        <nav class="navbar navbar-expand-lg bg-custom-color">
+            <div class="container-fluid">
+              <a class="logo" href="../index.html"><img src="../assets/img/Logo.png" alt="Logo de Lu Tomada"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/biografia.html">Acerca de mi</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Tecnicas
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="../pages/ballet.html">Ballet</a></li>
+                      <li><a class="dropdown-item" href="../pages/flowmo.html">Flow Motion</a></li>
+                      <li><a class="dropdown-item" href="../pages/tensegridance.html">Tensegridance</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/eventos.html">Eventos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <main>
         <section>
             <h1>Ballet</h1>
-            <p>
+            <p class="texto_tecnicas">
                 En mis clases de ballet, utilizo el Método Vaganova como base técnica, pero incorporo conceptos de diversas técnicas somáticas para que los movimientos sean más amigables para el cuerpo. Me enfoco en enseñar una postura equilibrada y consciente, permitiendo que los alumnos descubran cómo se siente el movimiento fluido y natural en su cuerpo. En lugar de imponer una postura rígida, utilizo la técnica de Alexander para ayudar a los estudiantes a liberar la tensión y mejorar su postura natural. Al integrar los conceptos de Tensegridad, les enseño cómo utilizar la tensión equilibrada en su cuerpo para mejorar la eficiencia de los movimientos y prevenir lesiones. Mis clases de ballet se centran en mejorar la técnica, pero también en fomentar una mayor conciencia del cuerpo y el movimiento, lo que ayuda a los estudiantes a disfrutar más de la práctica y a reducir la tensión y el dolor.            
             </p>
         </section>
-        <section>
-            <img src="../img/ballet1.webp" alt="luciana marcando postura">
-            <img src="../img/ballet2.jpg" alt="luciana dando clases de ballet">
+        <section class="visual_content">
+            <img class="img_ballet" src="../assets/img/Ballet1.jpg" alt="luciana marcando postura">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/zV1qLYukTH8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <img class="img_ballet" src="../assets/img/Ballet2.jpg" alt="luciana dando clases de ballet">
         </section>    
     </main>
     <footer>

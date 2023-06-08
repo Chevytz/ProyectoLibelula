@@ -11,26 +11,46 @@
     <title>La Libelula - Acerca de mi - Sitio Oficial</title>
 </head>
 <body>
-    <header>
-        <nav>    
-            <a class="logo" href="../index.html"><img src="../assets/img/Logo.png" alt="Logo de Lu Tomada"></a>
-            <ul class="menu">
-                <li><a href="../pages/biografia.html">Acerca de mi</a></li>
-                <li><a href="../pages/flowmo.html">FlowMo</a></li>
-                <li><a href="../pages/tensegridance.html">Tensegridance</a></li>
-                <li><a href="../pages/ballet.html">Ballet</a></li>
-                <li><a href="../pages/eventos.html">Eventos</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    <header>  
+        <nav class="navbar navbar-expand-lg bg-custom-color">
+            <div class="container-fluid">
+              <a class="logo" href="../index.html"><img src="../assets/img/Logo.png" alt="Logo de Lu Tomada"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/biografia.html">Acerca de mi</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Tecnicas
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="../pages/ballet.html">Ballet</a></li>
+                      <li><a class="dropdown-item" href="../pages/flowmo.html">Flow Motion</a></li>
+                      <li><a class="dropdown-item" href="../pages/tensegridance.html">Tensegridance</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/eventos.html">Eventos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <main>
         <section> 
             <h1>Bio</h1>
-            <aside>
-                <img class="bio" src="../assets/img/" alt="foto de luciana">
+            <aside class="bio_content">
+                <img class="bio" src="../assets/img/bio.jpg" alt="foto de luciana">
             </aside>
-            <aside>
+            <aside class="bio_text">
                 <p>
                     Mi nombre es Luciana, bailarina y docente, estudié en la Escuela Nacional de Danza y la Universidad Nacional de Arte. Actualmente curso la formación en Técnica de Alexander en la ETABA. 
                     Comencé a moverme de chica, y atravesé diversas técnicas hasta que encontré la que me enamoraría por completo: La Danza Clásica.

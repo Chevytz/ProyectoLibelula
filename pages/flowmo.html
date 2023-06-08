@@ -11,33 +11,54 @@
     <title>La Libelula - FlowMo - Sitio Oficial</title>
 </head>
 <body>
-    <header>
-        <nav>    
-            <a class="logo" href="../index.html"><img src="../assets/img/Logo.png" alt="Logo de Lu Tomada"></a>
-            <ul class="menu">
-                <li><a href="../pages/biografia.html">Acerca de mi</a></li>
-                <li><a href="../pages/flowmo.html">FlowMo</a></li>
-                <li><a href="../pages/tensegridance.html">Tensegridance</a></li>
-                <li><a href="../pages/ballet.html">Ballet</a></li>
-                <li><a href="../pages/eventos.html">Eventos</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    <header>  
+        <nav class="navbar navbar-expand-lg bg-custom-color">
+            <div class="container-fluid">
+              <a class="logo" href="../index.html"><img src="../assets/img/Logo.png" alt="Logo de Lu Tomada"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/biografia.html">Acerca de mi</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Tecnicas
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="../pages/ballet.html">Ballet</a></li>
+                      <li><a class="dropdown-item" href="../pages/flowmo.html">Flow Motion</a></li>
+                      <li><a class="dropdown-item" href="../pages/tensegridance.html">Tensegridance</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/eventos.html">Eventos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <main>
         <section>
             <h1>FlowMo</h1>
-            <p>
+            <p class="texto_tecnicas">
                 FlowMo es una técnica de movimiento y reeducación corporal. Basada en los principios somáticos de un cuerpo integrado, y el uso de la organización biomecánica natural del cuerpo humana, en FlowMotion buscamos entrenar al cuerpo en un uso óptimo y eficaz del mismo. 
                 Durante la clase por medio de la colocación, elongación y fuerza, se trabaja para amplificar los rangos articulares, el control sobre unx mismx, y la capacidad de explorar nuevas posibilidades de movimiento. 
                 Es una clase apta a todas las personas, sin importar edad, nivel o conocimientos previos. 
                 Por medio del movimiento integrado y fluido, desarrollamos y exploramos nuevas aptitudes físicas. No importa desde dónde estés comenzando.              
             </p>
         </section>
-        <section>
-            <img src="../img/flowmo1.jpg" alt="luciana haciendo flowmo1">
-            <img src="../img/flowmo2.jpg" alt="luciana haciendo flowmo2">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/jOz8URORp_k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <section class="visual_content">
+            <img class="img_flowmo" src="../assets/img/Flowmo1.jpg" alt="luciana haciendo flowmo1">
+            <video class="video_flowmo" src="../assets/vid/video-flowmo.MOV" alt="Luciana haciendo flowmo"></video>
+            <img class="img_flowmo" src="../assets/img/Flowmo2.jpg" alt="luciana haciendo flowmo2">
+            
         </section>    
     </main>
     <footer>
