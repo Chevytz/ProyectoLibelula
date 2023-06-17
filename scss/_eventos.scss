@@ -1,0 +1,24 @@
+.flyer {
+    height: 400px;
+    width: 300px;
+ }
+ .eventos_actuales {
+    display: flex;
+    justify-content: center;
+ }
+ .titulito {
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+ }
+ 
+ .carousel_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .img_eventos {
+    max-width: 100%;
+    height: 500px;
+    object-fit: cover;
+ }
