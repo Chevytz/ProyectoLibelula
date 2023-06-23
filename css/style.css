@@ -29,6 +29,15 @@ ul {
   list-style: none;
 }
 
+.bi {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease-in-out;
+}
+.bi:hover {
+  transform: scale(1.2);
+}
+
 .bi-facebook {
   color: blue;
 }
@@ -70,7 +79,7 @@ h1.h2, h2.h2 {
 }
 
 .logo img {
-  height: 60px;
+  height: 75px;
   padding: 5px;
 }
 
@@ -128,6 +137,22 @@ footer {
 }
 .dropdown-menu .dropdown-item:hover {
   color: #6CAEAD;
+}
+
+.dropdown-menu {
+  background-color: #fceed1;
+}
+.dropdown-menu .dropdown-item {
+  background-color: #fceed1;
+  color: #FE7748;
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  transition: background-color 0.6s ease-in-out;
+}
+.dropdown-menu .dropdown-item:hover {
+  color: #6CAEAD;
+  color: #fcd54c;
+  background-color: #6CAEAD;
 }
 
 /* imports layout */
@@ -191,10 +216,17 @@ footer {
 .main-box .box h2 {
   padding: 10px;
 }
-.main-box .box img {
+.main-box .box .img {
   height: 350px;
   padding: 10px;
   object-fit: cover;
+}
+
+.logo {
+  transition: 0.3s;
+}
+.logo:hover {
+  transform: rotate(360deg);
 }
 
 .bio_content {
@@ -322,20 +354,59 @@ footer {
   gap: 10px;
 }
 
-@media (min-width: 769px) and (max-width: 1200px) {
-  .visual_content {
+@media (min-width: 769px) and (max-width: 2000px) {
+  .main-box {
+    width: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding: 10px;
+    gap: 10px;
+  }
+  .main-box .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 15px;
-    gap: 2px;
+    border: solid;
+    border-color: #fd9f9d;
+    border-radius: 5px;
+    text-align: center;
+    width: 600px;
   }
-  .visual_content .img_ballet {
-    width: auto;
+  .main-box .box img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
   }
-  .visual_content .vid_ballet {
-    width: auto;
+  .main-box .box .contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Open Sans", "sans-serif";
+    font-size: 15px;
+  }
+  .main-box .box .contenido .boton {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    border: solid 2px #fd9f9d;
+    border-radius: 15px;
+    width: 40%;
+    margin-top: 10px;
+  }
+  .main-box .box .contenido .boton:hover {
+    box-shadow: 1px 2px 5px 2px #6CAEAD;
+    color: #6CAEAD;
+    border: solid 2px #6CAEAD;
+    border-radius: 55px;
+  }
+  .visual_content {
+    display: flex;
+    flex-direction: row;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {

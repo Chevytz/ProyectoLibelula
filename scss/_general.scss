@@ -18,7 +18,16 @@
  ul {
    list-style: none;
  }
+ .bi {
+   width: 50px;
+   height: 50px;
+   transition: transform 0.3s ease-in-out;
  
+   &:hover{
+     //transform: rotate(360deg);
+     transform: scale(1.2);
+   }
+ }
  .bi-facebook {
    color: blue;
  }
@@ -34,7 +43,7 @@
  .bi:hover {
    color: $hovercolor;
  }
- 
+
  .menu {
    display: flex;
    flex-direction: row;
@@ -63,7 +72,7 @@
  
  .logo {
    img {
-     height: 60px;
+     height: 75px;
      padding: 5px;
    }
  }
@@ -126,6 +135,24 @@
      
      &:hover {
        color: $hovercolor;
+     }
+   }
+ }
+
+ .dropdown-menu {
+   background-color: $maincolor;
+   
+   .dropdown-item {
+     background-color: $maincolor;
+     color: $textcolor;
+     font-family: 'Open Sans', sans-serif;
+     font-size: 17px;
+     transition: background-color 0.6s ease-in-out;
+     
+     &:hover {
+       color: $hovercolor;
+       color: $disruptor;
+       background-color: $hovercolor;
      }
    }
  }
