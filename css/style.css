@@ -1,24 +1,28 @@
 /* import desde google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Open+Sans:wght@300;400;600;800&display=swap");
+/* imports base */
 * {
   padding: 0;
   margin: 0;
 }
 
 body {
-  background-color: #FCEED1;
+  background-color: #fceed1;
   color: #FE7748;
   font-family: "Open Sans", sans-serif;
 }
-
-a {
+body a {
   text-decoration: none;
-  color: #6CAEAD;
+  color: #FE7748;
   font-size: 20px;
 }
 
-ul li {
+ul {
   list-style: none;
+}
+
+.bi-facebook {
+  color: blue;
 }
 
 .bi-whatsapp {
@@ -30,7 +34,7 @@ ul li {
 }
 
 .bi:hover {
-  color: black;
+  color: #6CAEAD;
 }
 
 .menu {
@@ -46,15 +50,14 @@ nav {
   padding: 10px;
 }
 
-h1 {
+h1, h2 {
   text-align: center;
   font-family: "Marcellus", serif;
+}
+h1.h1, h2.h1 {
   font-size: 24px;
 }
-
-h2 {
-  text-align: center;
-  font-family: "Marcellus", serif;
+h1.h2, h2.h2 {
   font-size: 20px;
 }
 
@@ -86,44 +89,47 @@ footer {
 }
 
 .bg-custom-color {
-  background-color: #FCEED1;
+  background-color: #fceed1;
 }
 
 .nav-link {
-  color: #FD9F9D;
+  color: #FE7748;
   font-family: "Open Sans", sans-serif;
   font-size: 17px;
 }
-
 .nav-link.active {
-  color: #FD9F9D;
-  font-family: "Open Sans", sans-serif;
-  font-size: 17px;
+  color: #6CAEAD;
 }
 
 .navbar-nav {
   margin-left: auto;
+  color: #FE7748;
+}
+.navbar-nav .nav-link:hover {
+  color: #6CAEAD;
 }
 
 .dropdown-menu {
-  background-color: #FCEED1;
+  background-color: #fceed1;
 }
-
-.dropdown-item {
-  background-color: #FCEED1;
-  color: #FD9F9D;
+.dropdown-menu .dropdown-item {
+  background-color: #fceed1;
+  color: #FE7748;
   font-family: "Open Sans", sans-serif;
   font-size: 17px;
 }
+.dropdown-menu .dropdown-item:hover {
+  color: #6CAEAD;
+}
 
+/* imports layout */
 .bienvenida {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Marcellus", "Open-Sans";
   text-align: center;
   padding: 10px 80px;
   margin: 5px;
 }
-
-.bienvenida h1 {
+.bienvenida .bienvenida h1 {
   margin: 15px;
 }
 
@@ -133,66 +139,65 @@ footer {
   padding: 10px;
   gap: 10px;
 }
-
-.box {
+.main-box .box {
   padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   border: solid;
-  border-color: #FD9F9D;
+  border-color: #fd9f9d;
   border-radius: 5px;
   text-align: center;
   width: 30%;
 }
-
-.box img {
+.main-box .box .box img {
   width: 100%;
   height: 500px;
   object-fit: cover;
 }
-
-.contenido {
+.main-box .box .contenido {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column;
   justify-content: center;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "sans-serif";
   font-size: 15px;
 }
-
-.contenido h2 {
+.main-box .box a {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.main-box .box a:hover {
+  color: #6CAEAD;
+}
+.main-box .box .contenido h2 {
   padding: 10px;
 }
-
-.contenido a {
-  align-self: flex-end;
-}
-
-.img_tense {
-  height: 300px;
+.main-box .box img {
+  height: 350px;
   padding: 10px;
+  object-fit: cover;
 }
 
 .bio {
   height: 500px;
   width: auto;
   object-fit: cover;
-  border: solid #FD9F9D;
+  border: solid #fd9f9d;
   border-radius: 10px;
 }
-
-.bio_content {
+.bio .bio_content {
   display: flex;
   justify-content: center;
   padding: 15px;
 }
-
-.bio_text {
+.bio .bio_text {
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
   text-align: center;
   padding: 15px;
-  border: solid #FD9F9D;
+  border: solid #fd9f9d;
   border-radius: 10px;
 }
 
@@ -210,6 +215,12 @@ footer {
 .img_ballet {
   height: 300px;
   padding: 10px;
+}
+
+.img_tense {
+  height: 350px;
+  padding: 10px;
+  object-fit: cover;
 }
 
 .flyer {
@@ -255,13 +266,11 @@ footer {
   background-color: #F0F0F0;
   border-radius: 5px;
 }
-
 .formulario_contacto label {
   display: block;
   margin-bottom: 10px;
   font-weight: bold;
 }
-
 .formulario_contacto input,
 .formulario_contacto textarea {
   width: 100%;
@@ -270,7 +279,6 @@ footer {
   border: 1px solid #CCC;
   border-radius: 5px;
 }
-
 .formulario_contacto button {
   width: 100%;
   padding: 10px;

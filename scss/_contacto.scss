@@ -1,44 +1,48 @@
 .texto_suscripcion {
-    display: flex;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    text-align: center;
-    padding: 15px;
+   display: flex;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 15px;
+   text-align: center;
+   padding: 15px;
  }
  
  .formulario_contacto {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #F0F0F0;
-    border-radius: 5px;
+   max-width: 400px;
+   margin: 0 auto;
+   padding: 20px;
+   background-color: #F0F0F0;
+   border-radius: 5px;
+ 
+   label {
+     display: block;
+     margin-bottom: 10px;
+     font-weight: bold;
+   }
+ 
+   input,
+   textarea {
+     width: 100%;
+     padding: 10px;
+     margin-bottom: 20px;
+     border: 1px solid #CCC;
+     border-radius: 5px;
+   }
+ 
+   button {
+     width: 100%;
+     padding: 10px;
+     background-color: #FE7748;
+     color: #FCEED1;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+   }
  }
- .formulario_contacto label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
- }
- .formulario_contacto input,
- .formulario_contacto textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #CCC;
-    border-radius: 5px;
- }
- .formulario_contacto button {
-    width: 100%;
-    padding: 10px;
-    background-color: #FE7748;
-    color: #FCEED1;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
- }
+ 
  .suscripcion {
-    display: flex;
-    justify-content: center;
-    padding: 40px;
-    font-family: 'Open Sans', sans-serif;
-    gap: 10px;
+   display: flex;
+   justify-content: center;
+   padding: 40px;
+   font-family: 'Open Sans', sans-serif;
+   gap: 10px;
  }
