@@ -1,22 +1,29 @@
-.bio {
-   height: 500px;
-   width: auto;
-   object-fit: cover;
-   border: solid $secondarycolor;
-   border-radius: 10px;
- 
-   .bio_content {
-     display: flex;
-     justify-content: center;
-     padding: 15px;
-   }
- 
-   .bio_text {
-     font-family: 'Open Sans', sans-serif;
-     font-size: 15px;
-     text-align: center;
-     padding: 15px;
-     border: solid $secondarycolor;
-     border-radius: 10px;
-   }
- }
+.bio_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.image-container {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+
+  img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+  }
+}
+
+.text-container {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  border: solid $secondarycolor;
+  border-radius: 10px;
+  padding: 15px;
+}
